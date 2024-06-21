@@ -81,6 +81,11 @@ public class BankAccount
             throw new IllegalBankException("Cannot transfer money to the same account");
         }
 
+        if(!this.accountNumber.equals(accountNumber))
+        {
+            throw new IllegalArgumentException("The given account number doesn't match your account number. " + accountNumber);
+        }
+
         this.withdraw(amountUsd);
         account2.deposit(amountUsd);
     }
