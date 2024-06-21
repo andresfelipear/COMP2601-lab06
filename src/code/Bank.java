@@ -12,7 +12,7 @@ public class Bank
     private final List<BankAccount> accounts;
 
     {
-        accounts = new ArrayList<BankAccount>();
+        accounts = new ArrayList<>();
     }
 
     public void addAccount(final BankAccount account)
